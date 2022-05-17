@@ -17,8 +17,9 @@ public class EItem {
         this.name = name;
 
         // check if price is positive
-        if(price < 0)
+        if(price < 0) {
             throw new IllegalArgumentException("Price must be positive");
+        }
         this.price = price;
     }
 
