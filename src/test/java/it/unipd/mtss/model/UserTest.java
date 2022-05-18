@@ -12,7 +12,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class UserTest {User user;
+public class UserTest {
+    User user;
 
     @Before
     public void initialize() {
