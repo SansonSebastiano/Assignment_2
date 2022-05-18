@@ -18,8 +18,8 @@ public class User {
         this.name = name;
         this.surname = surname;
         // check if dateOfBirth is not null
-        if (dateOfBirth != null) {
-            this.dateOfBirth = dateOfBirth;
+        if (dateOfBirth == null) {
+            throw new IllegalArgumentException("Date of birth value cannot be NULL");
         }
         // check if date of birth is valid
         if (dateOfBirth.isAfter(LocalDate.now())) {
